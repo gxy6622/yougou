@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/order.css">
+		<title>订单结算</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="back">
+				<a href="cart.html">
+					<img src="images/category/header/new-back.png" alt="">
+				</a>
+			</div>
+			<div class="ugou">
+				<span>结算中心</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="address">
+				<p class="receive-title"><img src="images/order/adress.png" alt="">收货地址</p>
+				<p class="receive-name"><span>zhangsan</span><span>137****7777</span></p>
+				<p class="receive-address">
+					******长城路000号
+					<a class="address-choice">
+						<img src="images/order/open.png" alt="">
+					</a>
+				</p>
+			</div>
+			<div class="deliver-date">
+				<p><img src="images/order/date.png" alt="">选择配送时间</p>
+				<ul class="deliver">
+					<li class="active">工作日、双休日与假日均可送货</li>
+					<li>仅工作日送货（周一至周五）</li>
+					<li>仅周末送货（周六、周日）</li>
+				</ul>
+			</div>
+			<div class="pay-style">
+				<p><img src="images/order/pay.png" alt="">选择支付方式</p>
+				<ul class="pay">
+					<li class="active">支付宝钱包支付</li>
+					<li>云闪付</li>
+					<li>招商银行</li>
+				</ul>
+			</div>
+			<div class="gift-card">
+				<p><img src="images/order/discount.png" alt="">使用优惠券与礼品卡</p>
+				<ul>
+					<li>使用优惠券<img src="images/order/open.png" alt=""></li>
+					<li>使用礼品卡<img src="images/order/open.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="invoice">
+				<p class="invoice-info"><img src="images/order/invoice.png" alt="">发票信息</p>
+				<p class="no-need">不需要发票<img src="images/order/open.png" alt=""></p>
+			</div>
+			<div class="product-info">
+				<p><img src="images/order/information.png" alt="">商品信息</p>
+				<ul class="info-list"></ul>
+			</div>
+			<p class="order-id"></p>
+		</div>
+		<div class="footer">
+			<div class="total-price-wrapper">
+				应付金额：<em>￥</em>
+			</div>
+			<button class="btn-settlement">提交订单</button>
+		</div>
+		
+		<script src="js/jQuery-3.4.0.js"></script>
+		<script src="js/js.cookie.min.js"></script>
+		<script src="js/myHttp.js"></script>
+		<script src="js/order.js"></script>
+	</body>
+</html>

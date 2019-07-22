@@ -1,0 +1,228 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.24rem;
+}
+button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+.header {
+	position: relative;
+	height: 0.8rem;
+	/* flex-shrink: 0; */
+	flex: none;
+	display: flex;
+	align-items: center;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #ddd;
+}
+.header>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header>.back {
+	width: 1rem;
+	height: 0.56rem;
+	flex-direction: column;
+}
+.header>.back>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.header>.back img {
+	width: 0.24rem;
+	height: 0.44rem;
+}
+.header>.cart {
+	flex-grow: 1;
+}
+.header>.cart>span {
+	font-size: 0.36rem;
+	color: #333;
+	text-align: center;
+}
+.header>.menu {
+	width: 0.8rem;
+	height: 0.56rem;
+}
+.header>.menu>img {
+	width: 0.4rem;
+	height: 0.32rem;
+}
+.nav {
+	width: 100%;
+	height: 0.98rem;
+	background: #666;
+	z-index: 2;
+	display: none;
+}
+.nav.active {
+	display: block;
+}
+.nav>ul {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.nav>ul>li {
+	display: flex;
+	flex: 1;
+}
+.nav>ul>li>a {
+	flex: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.nav>ul>li>a>img {
+	width: 20%;
+}
+.nav>ul>li>a>span {
+	font-size: 0.28rem;
+	color: white;
+}
+.content {
+	flex: 1;
+	overflow: auto;
+	background: #eee;
+}
+.content::-webkit-scrollbar {
+	display: none;
+}
+ul.cart-list {
+	margin: 0.2rem 0;
+	border-top: 1px solid #ddd;
+}
+ul.cart-list li {
+	display: flex;
+	padding: 0.5rem 0.2rem;
+	background: #fff;
+}
+ul.cart-list li>span.checkbox {
+	flex-shrink: 0;
+	align-self: center;
+}
+ul.cart-list li>a.avatar-wrapper {
+	flex-shrink: 0;
+	width: 2rem;
+	height: 2rem;
+	margin: 0 0.2rem;
+}
+ul.cart-list li>a.avatar-wrapper>img {
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	border: 0.02rem solid #ddd;
+}
+ul.cart-list li>.info {
+	flex-grow: 1;
+	position: relative;
+	margin-left: 0.05rem;
+}
+ul.cart-list li>.info>a.name {
+	font-size: 0.28rem;
+	color: #333;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+ul.cart-list li>.info>a.price-wrapper {
+	display: block;
+	font-size: 0.28rem;
+	color: #333;
+	margin-top: -0.2rem;
+}
+ul.cart-list li>.info>.count-wrapper {
+	width: 1.8rem;
+	height: 0.4rem;
+	display: flex;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+ul.cart-list li>.info>.count-wrapper>span {
+	flex: 0 0 auto;
+	width: 0.52rem;
+	text-align: center;
+	color: #666;
+	font-weight: bold;
+	border: 1px solid #bbb;
+}
+ul.cart-list li>.info>.count-wrapper>span.decrease {
+	border-right: none;
+	background-image: url(../images/cart/minusN.png);
+	background-repeat: no-repeat;
+	background-size: 60% 10%;
+	background-position: center center;
+}
+ul.cart-list li>.info>.count-wrapper>span.increase {
+	border-left: none;
+	background-image: url(../images/cart/addN.png);
+	background-repeat: no-repeat;
+	background-size: 60% 60%;
+	background-position: center center;
+}
+.footer {
+	height: 1rem;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 0.02rem solid #ddd;
+}
+.all-wrapper {
+	display: flex;
+	align-items: center;
+	font-size: 0.28rem;
+	margin-left: 0.2rem;
+}
+span.checkbox {
+	display: block;
+	width: 0.36rem;
+	height: 0.36rem;
+	background-image: url(../images/cart/icon_checkbox_uncheck.png);
+	background-size: 100% 100%;
+}
+span.checkbox.checked {
+	background-image: url(../images/cart/icon_checkbox_check.png);
+	background-size: 100% 100%;
+}
+.total-price-wrapper {
+	flex-grow: 1;
+	padding-right: 0.2rem;
+	text-align: right;
+	font-size: 0.28rem;
+}
+.total-price-wrapper em {
+	font-style: normal;
+	color: rgb(191,17,17);
+}
+.footer button {
+	width: 2.5rem;
+	height: 100%;
+	background-color: #bf1111;
+	color: white;
+	font-size: 0.32rem;
+}
+.footer span.remove {
+	display: flex;
+	margin-left: 0.5rem;
+	align-items: center;
+}
+.footer span.remove>img {
+	width: 30%;
+	height: 30%;
+	
+}

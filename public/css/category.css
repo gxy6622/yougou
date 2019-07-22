@@ -1,0 +1,154 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.24rem;
+}
+.header {
+	position: relative;
+	height: 0.8rem;
+	/* flex-shrink: 0; */
+	flex: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #ddd;
+}
+.header>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header>.back {
+	width: 1rem;
+	height: 0.56rem;
+	flex-direction: column;
+}
+.header>.back>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.header>.back img {
+	width: 0.24rem;
+	height: 0.44rem;
+}
+.header>.search {
+	flex: 1;
+	background: rgb(255, 255, 255);
+	border: 0.02rem solid #bbb;
+	border-radius: 0.03rem;
+	height: 0.56rem;
+}
+.header>.search>img {
+	width: 0.4rem;
+	height: 0.32rem;
+	margin-left: 0.12rem;
+}
+.header>.search>span {
+	flex: 1;
+	font-size: 0.24rem;
+	color: #999;
+	margin-left: 0.12rem;
+}
+.header>.menu {
+	width: 0.8rem;
+	height: 0.56rem;
+}
+.header>.menu>img {
+	width: 0.4rem;
+	height: 0.32rem;
+}
+.nav {
+	width: 100%;
+	height: 0.98rem;
+	background: #666;
+	z-index: 2;
+	display: none;
+}
+.nav.active {
+	display: block;
+}
+.nav>ul {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.nav>ul>li {
+	display: flex;
+	flex: 1;
+}
+.nav>ul>li>a {
+	flex: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.nav>ul>li>a>img {
+	width: 20%;
+}
+.nav>ul>li>a>span {
+	font-size: 0.28rem;
+	color: white;
+}
+.content {
+	flex: 1;
+	overflow: auto;
+	display: flex;
+}
+.content>.left {
+	width: 1.8rem;
+	height: 100%;
+	overflow: auto;
+	flex-shrink: 0;
+	/* border-right: 1px solid #ccc; */
+	font-size: 0.28rem;
+}
+.content>.left>ul.category-main {}
+.content>.left>ul.category-main>li {
+	padding: 0.2rem 0;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	color: #666;
+}
+.content>.left>ul.category-main>li.active {
+	color: #ff0000;
+	border-right: 1px solid transparent;
+	background: #eee;
+}
+.content>.left>ul.category-main>li>span {}
+.right {
+	flex-grow: 1;
+	overflow: auto;
+	padding: 0 0.1rem;
+	background: #eee;
+}
+.right::-webkit-scrollbar {
+	display: none;
+}
+.right ul.category-sub {
+	background: #fff;
+}
+.right li {
+	display: inline-block;
+	width: 33.333333%;
+	padding: 0.2rem 0.6rem 0.4rem 0.26rem;
+	box-sizing: border-box;
+}
+.right li>a {
+	display: block;
+	text-align: center;
+	color: #333;
+}
+.right li>a>img {
+	width: 100%;
+}
+.right li>span {}
